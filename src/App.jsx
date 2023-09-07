@@ -1,28 +1,16 @@
-import { useState} from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import ContactList from './components/contactList'
 
-
 function App() {
   const [count, setCount] = useState(0)
+  const [contacts, setContacts] = useState(dummyContacts)
 
   return (
     <>
-      <div>
-      </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <ContactList/>
     </>
   )
 }
 
-export default function App() {
-  return (
-    <>
-      <ContactList />
-    </>
-  );
-}
+export default App
