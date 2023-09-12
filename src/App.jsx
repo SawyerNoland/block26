@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import ContactList from './component/ContactList';
-import ContactRow from './component/ContactRow';
+import ContactList from './components/ContactList';
+import ContactRow from './components/ContactRow';
 
 // const [contacts, setContacts] = useState(dummyContacts)
 
